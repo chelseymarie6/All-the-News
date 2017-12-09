@@ -6,7 +6,6 @@ $.getJSON('/articles', function(data){
 	}
 });
 
-
 // On Click function for paragraph with Ajax call
 $(document).on('click', 'p', function(){
 	$('#notes').empty();
