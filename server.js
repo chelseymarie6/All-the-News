@@ -13,8 +13,8 @@ var app = express();
 // Connects to the Mongo DB
 var db = mongoose.connection;
 //  MONGODB_URI = mongodb://heroku_7st7z688:thgtm09s6gk5t48fusce1cslka@ds047712.mlab.com:47712/heroku_7st7z688
-mongoose.connect('mongodb://localhost/All-the-News');
-//mongoose.connect("MONGODB_URI: mongodb://heroku_7st7z688:thgtm09s6gk5t48fusce1cslka@ds047712.mlab.com:47712/heroku_7st7z688");
+//mongoose.connect('mongodb://localhost/All-the-News');
+mongoose.connect("MONGODB_URI: mongodb://heroku_7st7z688:thgtm09s6gk5t48fusce1cslka@ds047712.mlab.com:47712/heroku_7st7z688");
 
 // Use morgan logger for logging requests
 app.use(logger("dev"));
